@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FragrancePlusCustomerDatabase</string>
+    <string name="action_settings">Settings</string>
+    <string name="Dropbox_api_key">
+4bqcfnni8foo3bg</string>
+    <string name="dropbox_secret_key">
+tnlked313ghtt8o</string>
+    <string name="title_activity_keypad">KeypadActivity</string>
+    <string name="code">0349</string>
+    <bool name="isTablet">false</bool>
+</resources>

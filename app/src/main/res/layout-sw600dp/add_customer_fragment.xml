@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cordLayout">
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/firstNameEditText"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:typeface="serif"
+                android:textSize="35sp"
+                android:enabled="true"
+                android:nextFocusDown="@+id/lastNameEditText"
+                android:maxLength="15" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/lastNameEditText"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:typeface="serif"
+                android:textSize="35sp"
+                android:nextFocusUp="@+id/firstNameEditText"
+                android:nextFocusDown="@+id/emailEditText"
+                android:maxLength="20" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/emailEditText"
+                android:hint="Email Address"
+                android:typeface="serif"
+                android:textSize="35sp"
+                android:nextFocusUp="@+id/lastNameEditText"
+                android:nextFocusDown="@+id/phoneEditText"
+                android:maxLength="30" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/phoneEditText"
+                android:hint="Phone Number"
+                android:typeface="serif"
+                android:textSize="35sp"
+                android:nextFocusUp="@+id/emailEditText"
+                android:nextFocusDown="@+id/promotionsCheckBox"
+                android:maxLength="14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Receive Special Coupons And Promotions Through Email and/or Phone Listed?"
+                android:id="@+id/promotionsCheckBox"
+                android:typeface="sans"
+                android:textSize="23sp"
+                android:textStyle="italic"
+                android:nextFocusUp="@+id/phoneEditText"
+                android:nextFocusDown="@+id/saveButton"/>
+        </TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveButton"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

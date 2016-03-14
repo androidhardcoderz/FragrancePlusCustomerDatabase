@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:measureWithLargestChild="true"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Large Text"
+        android:id="@+id/firstNameTextView"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Large Text"
+        android:id="@+id/lastNameTextView"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Large Text"
+        android:id="@+id/emailTextView"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Large Text"
+        android:id="@+id/phoneTextView"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Promotion"
+        android:id="@+id/promotionCheckBox"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textSize="10sp" />
+
+</LinearLayout>
